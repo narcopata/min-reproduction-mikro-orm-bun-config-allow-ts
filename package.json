@@ -1,0 +1,20 @@
+{
+  "name": "min-reproduction-mikro-orm-bun-config-allow-ts",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^6.1.12",
+    "@mikro-orm/core": "^6.1.12",
+    "@mikro-orm/postgresql": "^6.1.12"
+  },
+  "mikro-orm": {
+    "alwaysAllowTs": true,
+    "configPaths": ["./src/database/mikro-orm.config.ts"]
+  }
+}
